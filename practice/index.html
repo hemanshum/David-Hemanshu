@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -21,43 +23,52 @@
     - The freeCodeCamp Team
 
     -->
-    <div>
-      <h1 id='title'>Hellow World</h1>
+    <div class="container">
+      <h1 id='title'>Hello World</h1>
       <p id="description">Hello World, we are software developers!</p>
 
     <form id="survey-form">
-      <div>
+      <div class="spacer">
         <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" required placeholder="Enter your Name">
+        <div>
+          <input class="form-fields" type="text" id="name" required placeholder="Enter your Name">
+        </div>
       </div>
-      <div>
+      <div class="spacer">
         <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" required placeholder="Enter your email">
+        <div>
+          <input class="form-fields" type="email" id="email" required placeholder="Enter your email">
+        </div>
       </div>
-      <div>
-        <label for="Number" id="number-label">Enter Number</label>
-        <input type="number" id="number" required min="0" max="99999999" placeholder="Enter your phone Number">
+      <div class="spacer">
+        <label for="Number" id="number-label">Number</label>
+        <div>
+          <input class="form-fields" type="number" id="number" required min="0" max="99999999" placeholder="Enter your phone Number">
+        </div>
       </div>
-      <div>
-        <select name="gender" id="dropdown">
+      <div class="spacer">
+        <select class="form-fields" name="gender" id="dropdown">
           <option value="male">male</option>
           <option value="female">female</option>
         </select>
       </div>
-      <div>
+      <div class="spacer">
         <input id="red" type="radio" name="blue/red" value="red"> <label for="red">red</label>;
       <input id="blue" type="radio" name="blue/red" value="blue"> <label for="blue">blue</label>;
       </div>
-      <div>
+      <div class="spacer">
         <input id="experties" type="checkbox" name="experties" value="JS"> <label for="JavaScript">JavaScript</label>;
         <input id="experties" type="checkbox" name="experties" value="HMTL"> <label for="HTML">HTML</label>;
       </div>
-      <div>
+      <div class="spacer">
         <label for="comments">Please add your comments here:</label>
-        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <br>
+        <textarea  name="comments" id="comments" cols="30" rows="10"></textarea>
       </div> 
-          
-      <button id="submit">submit</button>
+      
+      <div class="btn">
+        <button class='submit-btn' id="submit">submit</button>
+      </div>
       
     </form>
     </div>
